@@ -1,10 +1,17 @@
 #  The contact options.
+- type: Facebook
+  icon: "fab fa-facebook"
+#  url:  '' 
 
-- type: github
-  icon: "fab fa-github"
+- type: YouTube
+  icon: "fab fa-youtube-square"
+  # url: "https://youtube.com/your-channel"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+# - type: github
+#   icon: "fab fa-github"
+
+# - type: twitter
+#   icon: "fa-brands fa-x-twitter"
 
 - type: email
   icon: "fas fa-envelope"
