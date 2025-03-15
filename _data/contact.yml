@@ -1,11 +1,11 @@
 #  The contact options.
 - type: facebook
   icon: 'fab fa-facebook-square'   # icons powered by <https://fontawesome.com/>
-  url:  ''                  # Fill with your Linkedin homepage
+  # url:  ''                  # Fill with your Linkedin homepage
 
 - type: youtube
   icon: 'fab fa-youtube'   # icons powered by <https://fontawesome.com/>
-  url:  ''                  # Fill with your Linkedin homepage
+  # url:  ''                  # Fill with your Linkedin homepage
 
 # - type: github
 #   icon: "fab fa-github"
