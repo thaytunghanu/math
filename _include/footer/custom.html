@@ -1,0 +1,27 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.MathJax && typeof MathJax.typeset === "function") {
+      MathJax.typeset();
+    }
+  });
+</script>
+
+<script>
+  function renderMath() {
+    if (window.MathJax && typeof MathJax.typeset === "function") {
+      MathJax.typeset();
+    }
+  }
+
+  // Khi trang vừa tải xong
+  document.addEventListener("DOMContentLoaded", renderMath);
+
+  // Khi dùng PJAX (Chirpy dùng PJAX để load nhanh nội dung)
+  document.addEventListener("pjax:end", renderMath);
+
+  // Nếu theme dùng Turbo
+  document.addEventListener("turbo:load", renderMath);
+
+  // Fallback nếu F5 vẫn không render
+  window.onload = renderMath;
+</script>
