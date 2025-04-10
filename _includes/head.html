@@ -127,7 +127,8 @@
     window.MathJax = {
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
-        processEscapes: true
+        processEscapes: true,
+        packages: {'[+]': ['color']}  // Thêm dòng này để bật \textcolor
       },
       options: {
         renderActions: {
