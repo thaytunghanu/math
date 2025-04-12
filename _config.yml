@@ -224,4 +224,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+static_assets:
+  enabled: false
 # math: true # thêm vào

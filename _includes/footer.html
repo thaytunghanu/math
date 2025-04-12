@@ -40,6 +40,12 @@
   </p>
 </footer>
 
+<!-- Busuanzi script -->
+<script
+  async
+  src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+></script>
+
 <footer class="pt-2 pb-3 mt-auto">
   <p class="text-muted text-center">
     © {{ site.time | date: '%Y' }}
@@ -54,18 +60,23 @@
   </p>
 </footer>
 
+<meta
+  http-equiv="Cache-Control"
+  content="no-cache, no-store, must-revalidate"
+/>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
 <script>
   // Thêm timestamp để vô hiệu hóa cache CSS/JS
   document.querySelectorAll('link[rel="stylesheet"]').forEach((link) => {
-    link.href += "?v=" + new Date().getTime();
+    if (!link.href.includes("?v=")) {
+      link.href += "?v=" + new Date().getTime();
+    }
   });
   document.querySelectorAll("script[src]").forEach((script) => {
-    script.src += "?v=" + new Date().getTime();
+    if (!script.src.includes("?v=")) {
+      script.src += "?v=" + new Date().getTime();
+    }
   });
 </script>
-
-<!-- Busuanzi script -->
-<script
-  async
-  src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
-></script>
