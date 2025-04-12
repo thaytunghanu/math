@@ -106,12 +106,12 @@
   <!-- cache bursting -->
   <link
     rel="stylesheet"
-    href="{{ '/assets/css/style.css?v=' | append: site.time | relative_url }}"
+    href="{{ '/assets/css/style.css?v=' | append: site.time | date: '%Y%m%d%H%M%S' | relative_url }}"
   />
 
   <!-- Scripts -->
 
-  <script src="{{ '/assets/js/misc.js?v=' | append: site.time | relative_url }}"></script>
+  <script src="{{ '/assets/js/misc.js?v=' | append: site.time | date: '%Y%m%d%H%M%S' | relative_url }}"></script>
 
   <script src="{{ '/assets/js/dist/theme.min.js' | relative_url }}"></script>
 
