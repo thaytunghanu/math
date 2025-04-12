@@ -104,14 +104,15 @@
   {% endif %}
 
   <!-- cache bursting -->
-  <link
-    rel="stylesheet"
-    href="{{ '/assets/css/style.css?v=' | append: site.time | date: '%Y%m%d%H%M%S' | relative_url }}"
-  />
+  {% assign ver = site.time | date: '%Y%m%d%H%M%S' %} {% assign css_path =
+  '/assets/css/style.css?v=' | append: ver %}
+  <link rel="stylesheet" href="{{ css_path | relative_url }}" />
 
   <!-- Scripts -->
 
-  <script src="{{ '/assets/js/misc.js?v=' | append: site.time | date: '%Y%m%d%H%M%S' | relative_url }}"></script>
+  {% assign ver = site.time | date: '%Y%m%d%H%M%S' %} {% assign js_path =
+  '/assets/js/misc.js?v=' | append: ver %}
+  <script src="{{ js_path | relative_url }}"></script>
 
   <script src="{{ '/assets/js/dist/theme.min.js' | relative_url }}"></script>
 
