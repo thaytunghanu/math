@@ -20,6 +20,13 @@
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   />
 
+  <meta
+    http-equiv="Cache-Control"
+    content="no-cache, no-store, must-revalidate"
+  />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
   {%- capture seo_tags -%} {% seo title=false %} {%- endcapture -%}
 
   <!-- Setup Open Graph image -->
@@ -103,16 +110,7 @@
   />
   {% endif %}
 
-  <!-- cache bursting -->
-  {% assign ver = site.time | date: '%Y%m%d%H%M%S' %} {% assign css_path =
-  '/assets/css/style.css?v=' | append: ver %}
-  <link rel="stylesheet" href="{{ css_path | relative_url }}" />
-
   <!-- Scripts -->
-
-  {% assign ver = site.time | date: '%Y%m%d%H%M%S' %} {% assign js_path =
-  '/assets/js/misc.js?v=' | append: ver %}
-  <script src="{{ js_path | relative_url }}"></script>
 
   <script src="{{ '/assets/js/dist/theme.min.js' | relative_url }}"></script>
 
