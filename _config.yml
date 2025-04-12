@@ -226,5 +226,5 @@ jekyll-archives:
     category: /categories/:name/
 
 static_assets:
-  enabled: false
-# math: true # thêm vào
+  enabled: true
+  cdn: https://cdn.jsdelivr.net/npm/jekyll-theme-chirpy@7.2.4
