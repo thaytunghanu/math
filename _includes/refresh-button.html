@@ -23,7 +23,6 @@
 
 <script>
   document.getElementById("refresh-button").addEventListener("click", () => {
-    // Thêm tham số chống cache và reload
     const url = window.location.pathname + "?v=" + new Date().getTime();
     window.location.href = url;
   });
