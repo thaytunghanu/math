@@ -1,6 +1,6 @@
 <!-- HTML Meta Tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 {% include_cached head/meta.html %}
 
@@ -8,21 +8,26 @@
 {% include_cached head/favicon.html %}
 
 <!-- Theme CSS -->
-<link rel="stylesheet" href="{{ '/assets/css/:THEME.css?v=' | replace: ':THEME', site.theme | append: site.time | date: '%s' | relative_url }}" />
+<link
+  rel="stylesheet"
+  href="{{ '/assets/css/:THEME.css?v=' | replace: ':THEME', site.theme | append: site.time | date: '%s' | relative_url }}"
+/>
 
 <!-- Web Font -->
-<link rel="stylesheet" href="{{ site.data.origin[type].webfonts | append: '?v=' | append: site.time | date: '%s' | relative_url }}" />
+<link
+  rel="stylesheet"
+  href="{{ site.data.origin[type].webfonts | append: '?v=' | append: site.time | date: '%s' | relative_url }}"
+/>
 
 <!-- Font Awesome -->
-<link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | append: '?v=' | append: site.time | date: '%s' | relative_url }}" />
+<link
+  rel="stylesheet"
+  href="{{ site.data.origin[type].fontawesome.css | append: '?v=' | append: site.time | date: '%s' | relative_url }}"
+/>
 
 <!-- JavaScript -->
 <script src="{{ '/assets/js/dist/theme.min.js?v=' | append: site.time | date: '%s' | relative_url }}"></script>
 
-{% if page.math %}
-  {% include head/mathjax.html %}
-{% endif %}
-
-{% if site.google_analytics.id and jekyll.environment == 'production' %}
-  {% include head/google-analytics.html %}
-{% endif %}
+{% if page.math %} {% include head/mathjax.html %} {% endif %} {% if
+site.google_analytics.id and jekyll.environment == 'production' %} {% include
+head/google-analytics.html %} {% endif %}
