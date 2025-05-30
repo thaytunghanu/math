@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: https://thaytunghanu.github.io/math//https://thaytunghanu.github.io/math/sitemap.xml
